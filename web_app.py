@@ -272,6 +272,9 @@ if uploaded_file is not None or camera_image is not None:
     confidence = float(
         np.max(prediction[0]) * 100
     )
+    if confidence < 70:
+        st.error("Data Not Found / Unsupported Plant Image)
+        st.stop()
 
     predicted_class = class_names[index].strip()
 
