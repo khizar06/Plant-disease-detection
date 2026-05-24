@@ -216,14 +216,14 @@ st.markdown("""
 # =====================================
 
 model = tf.keras.models.load_model(
-    "model/plant_disease_model.h5"
+    "plant_disease_model.h5"
 )
 
 # =====================================
 # LOAD CLASS NAMES
 # =====================================
 
-with open("model/class_names.json", "r") as f:
+with open("class_names.json", "r") as f:
     class_names = json.load(f)
 
 img_size = 224
