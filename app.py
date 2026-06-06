@@ -5,6 +5,18 @@ import cv2
 import json
 import os
 import hashlib
+import os
+import requests
+
+def download_model():
+    model_path = "model/best_model.keras"
+    if not os.path.exists("model"):
+        os.makedirs("model")
+    if not os.path.exists(model_path):
+        url = "https://www.kaggle.com/api/v1/datasets/files/mkhizar11/plant-diseases-detection00"
+        # Direct download link chahiye
+        pass
+    return model_path
 
 
 # =====================================
