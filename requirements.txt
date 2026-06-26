@@ -1,4 +1,8 @@
 streamlit
-tensorflow-cpu==2.15.0
+tensorflow==2.19.0
+keras==3.13.2
 opencv-python-headless
-sckit-learn
+numpy
+scikit-learn
+h5py
+pillow
